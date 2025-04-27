@@ -1,7 +1,7 @@
 
 import './App.css'
 import Navbar from './components/navbar/navbar'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { HashRouter ,Routes,Route } from 'react-router-dom'
 import Shop from './pages/Shop'
 import Shopcategory from './pages/Shopcategory'
 import Product from './pages/Product'
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter basename='/ecommerce-website/'>
+    <HashRouter >
     <Navbar/>
     <Routes>
       <Route path='/' element={<Shop/>}/>
@@ -31,7 +31,7 @@ function App() {
       <Route path='/login' element={<Loginsignup/>}/>
     </Routes>
     <Footer/>
-    </BrowserRouter>
+    </HashRouter >
     </>
   )
 }
