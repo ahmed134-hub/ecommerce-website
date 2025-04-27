@@ -25,9 +25,7 @@ const Shopcontextprovider = (props)=>{
         const getTotlaCartAmount = ()=>{
             let totalAmount = 0
             for(const item in cartitems){
-                console.log(cartitems)
                 if(cartitems[item] > 0 ){
-                    console.log("yes")
                     let iteminfo = all_products.find((product)=> product.id===Number(item))
                     totalAmount += iteminfo.new_price * cartitems[item]
                     
