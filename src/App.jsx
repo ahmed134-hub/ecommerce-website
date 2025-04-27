@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/E-commercial-website/'>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Shop/>}/>
