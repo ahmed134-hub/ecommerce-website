@@ -63,4 +63,10 @@
     .newsletter div{
         width: 95%;
     }
+    .newsletter div button{
+        width: 30%;
+    }
+    .newsletter input {
+        width: 100%;
+    }
 }
